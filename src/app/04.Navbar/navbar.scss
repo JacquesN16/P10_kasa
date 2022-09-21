@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.nav-container{
+    height: 68px;
+    font-size: 24px;
+    color: $text-primary-color;
+    #logo-navbar{
+        width: 210px;
+    }
+    .k-nav-item-grp{
+        color: inherit !important;
+        width: 310px;
+        display: flex;
+        .nav-item{
+            margin-left: 60px;
+            a{
+                color: inherit;
+                // text-decoration: none;
+            }
+        }
+    }
+
+}
