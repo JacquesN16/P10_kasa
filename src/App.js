@@ -5,6 +5,7 @@ import Home from './app/01.Home/Home';
 import Navbar from './app/04.Navbar/Navbar';
 import { route } from './utils/route';
 import Logement from './app/05.Logement/Logement';
+import Footer from './app/02.Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         
         <Route path={route.logement} element={<Logement/>}/>
       </Routes>
+
+      <Footer/>
       
     </div>
   );

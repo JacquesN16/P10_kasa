@@ -1,0 +1,31 @@
+@import "../../common.scss";
+@import "../../variables.scss";
+
+.logement-container{
+    margin-top: 30px;
+    min-height: 90vh;
+    width: 100%;
+    .info-container{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        color: $text-primary-color;
+        .profile-container{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            #name-container{
+                margin: 2px;
+                width: 60px;
+            }
+            #host-profile-pic{
+                display: block; 
+                width: 64px;   
+                height: 64px;
+                background-color: grey;
+                border-radius: 50%;
+            }
+        };
+       
+    }
+}

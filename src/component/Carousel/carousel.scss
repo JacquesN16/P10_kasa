@@ -1,0 +1,40 @@
+@import "../../common.scss";
+
+.active-img{
+    display: block;  
+}
+
+.hidden-img{
+    display:none;
+}
+
+.carousel-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    .img-container{
+        img{
+            width: 100%;
+        }
+       
+    }
+}
+
+.navigate-icon{
+    border: red;
+    color: white;
+    font-size: x-large;
+    cursor: pointer;
+    position: absolute;
+}
+
+#prev-icon{
+    left: 10px;
+    top: 50%;
+}
+#next-icon{
+    right: 10px;
+    top:50%;
+}
