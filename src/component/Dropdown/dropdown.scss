@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-
+@import "../../common.scss";
 
 .dropdown {
     width: 300px;
@@ -11,6 +11,7 @@
   
   .dropdown-header {
     padding: 15px;
+    max-height: 3rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -22,6 +23,7 @@
     padding: 5px;
     border-top: 1px solid #E5E8EC;
     display: none;
+    width: 100%;
   }
   
   .dropdown-body.open {
@@ -58,4 +60,8 @@
   
   .icon.open {
     transform: rotate(180deg);
+  }
+  .dropdown-50{
+    width: 40%;
+    margin-right: 2rem;
   }

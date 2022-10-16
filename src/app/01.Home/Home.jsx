@@ -42,7 +42,6 @@ export default function Home () {
             <header>
                 <div className="header-wrapper br-25">
                     <p id="header-text">Chez vous, partout et ailleurs</p>
-                    {/* <img alt="header-background" id="header-img" src="./img/IMG.png"/> */}
                 </div>
             </header>
             <main className="cards-container br-25 row">

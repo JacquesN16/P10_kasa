@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+@import "../../common.scss";
+.profile {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  color: $bgc-red;
+  @media only screen and (max-width: 480px) {
+    flex-direction: row;
+    align-items: center;
+    flex-flow: row-reverse;
+    gap: 50px;
+    margin-top: 5px;
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .profile-img {
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}

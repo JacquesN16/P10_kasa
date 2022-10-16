@@ -54,6 +54,7 @@ export default function Carousel (props) {
                 
                 {props.imgs && props.imgs.map((item,idx) =>{return(
                     <img 
+                    key={idx}
                     src={item} 
                     alt={`carousel-img-${idx}`} 
                     className={renderDisplay(idx)}

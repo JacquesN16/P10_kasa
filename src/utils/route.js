@@ -1,4 +1,5 @@
 export const route = {
     home: '/',
-    logement:'/logement'
+    logement:'/logement',
+    about:'/about'
 }

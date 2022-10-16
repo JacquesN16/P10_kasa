@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+@import "../../common.scss";
+.tag {
+  background-color: $bgc-red;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  width: 115px;
+  height: 25px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 2px;
+}

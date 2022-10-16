@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+@import "../../common.scss";
+
+.detail {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .info {
+    color: $bgc-red;
+    font-weight: 500;
+    .title {
+      font-size: 36px;
+      line-height: 51px;
+    }
+    .location {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    .tags {
+      display: flex;
+      gap: 5px;
+    }
+  }
+}

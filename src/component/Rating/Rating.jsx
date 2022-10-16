@@ -2,20 +2,21 @@ import {useState, useEffect} from 'react'
 
 export default function Rating (props){
 
-    const [starsCount, setStarsCount ] = useState([])
-
-    useEffect(()=>{
-        if(!props.rating){
-            return 
+    const allStars = [1,2,3,4,5]
+    const renderColor = (idx) => {
+        if(idx < props.rating){
+            return "red"
+        } else {
+            return "gray"
         }
-
-        const stars_arr = Array.from(Array(props.rating).keys())
-        setStarsCount(stars_arr)
-    },[props])
-
+    }
+    console.log(props)
     return(<>
         <div className="rating-container">
-           {starsCount && starsCount.map()}
+
+           {props.rating && allStars.map((start,idx)=>{return(
+            <i key={idx} className="fas fa-star" style={{color:`${renderColor(idx)}`}}></i>
+           )})}
         </div>
     </>)
 }
