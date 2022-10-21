@@ -1,12 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Carousel from '../../component/Carousel/Carousel';
-import Dropdown from '../../component/Dropdown/Dropdown';
-import Rating from '../../component/Rating/Rating';
-import Tag from '../../component/Tag/Tag';
 import logements from "../../data/logements.json"
 import "./logement.scss"
-import DropdownSimple from "../../component/DropdownSimple/DropdownSimple";
+import Dropdown from "../../component/DropdownSimple/Dropdown";
 import Host from "../../component/Host/Host";
 
 export default function Logement () {
@@ -28,12 +25,12 @@ export default function Logement () {
             </div>
 
             <div style={{"display": "flex"}}>
-                <DropdownSimple
+                <Dropdown
                     title='Equipements'
                     description={data.equipments.join("\n")}
                 />
 
-                <DropdownSimple
+                <Dropdown
                     title="Description"
                     description={data.description}
                 />

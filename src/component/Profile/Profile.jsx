@@ -1,10 +1,9 @@
 import React from "react";
 import Rating from "../Rating/Rating";
-import PropTypes from "prop-types";
 import "./Profile.scss";
 
 export default function Profile  (props) {
-    console.log(props)
+
   return (
     <div className="profile">
       <div className="profile-info">

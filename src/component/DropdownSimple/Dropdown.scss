@@ -1,17 +1,19 @@
 @import "../../variables.scss";
 @import "../../common.scss";
-.collapsible {
+.dropdown {
   width: 94%;
   margin: 20px;
+  font-size: 24px;
+  font-family: inherit;
 
-  .collapsible-button {
+
+  .dropdown-button {
     background-color: $bgc-red;
     color: white;
     cursor: pointer;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     text-align: left;
@@ -19,7 +21,7 @@
       border-radius: 5px;
     }
   }
-  .title-collapsible {
+  .title-dropdown {
     padding-left: 20px;
     padding-top: 5px;
   }
@@ -30,9 +32,11 @@
 .content {
   padding: 0 18px;
   display: none;
+  font-weight: 300;
   min-height: 60px;
   margin-bottom: 10px;
   overflow: hidden;
+  text-align: left;
   background-color: $bgc-gray;
   left: 0px;
   top: 42px;

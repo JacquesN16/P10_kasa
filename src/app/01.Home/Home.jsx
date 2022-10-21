@@ -1,37 +1,14 @@
 import "./home.scss"
 import {useState,useEffect} from "react"
-import logements from "../../data/logements.json" 
+import logements from "../../data/logements.json"
 import { route } from '../../utils/route';
+import Card from "../../component/Card/Card";
+import {Link} from "react-router-dom";
 
 
 export default function Home () {
 
     const [data, setData] = useState([])
-
-    const goToDetailPage = (id) => {
-        if(!id){
-            return
-        }
-     window.location.replace(`${route.logement}?id=${id}`)
-    }
-
-    const renderCard = (datum) =>{
-
-        return(
-        <div 
-            key={datum.id} 
-            className="card k-card br-10"
-            onClick={()=>goToDetailPage(datum.id)}
-            style={{
-                background: 
-                `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5)), url('${datum.cover}') no-repeat`
-            }}
-        > 
-            {/* <img src={datum.cover} alt={`cover-${datum.id}`}/> */}
-            <span id="k-card-title">{datum.title} </span>
-        </div>)
-
-    }
 
     useEffect(()=>{
        setData(logements)
@@ -45,7 +22,14 @@ export default function Home () {
                 </div>
             </header>
             <main className="cards-container br-25 row">
-                {data && data.map(item => renderCard(item))}
+                <section className="card-list">
+                {data && data.map((item,idx) =>{
+                    return (
+                    <Link key={idx} to={`/announce/${item.id}`}>
+                        <Card key={idx} id={idx} title={item.title} cover={item.cover} />
+                    </Link>
+                    )})}
+                </section>
             </main>
         </div>
     </>)

@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-import "./DropdownSimple.scss";
+import "./Dropdown.scss";
 
-export default function DropdownSimple (props) {
+export default function Dropdown (props) {
   const [showDetail, setShowDetail] = useState(false);
 
   return (
-    <div className="collapsible br-10">
+    <div className="dropdown br-5">
       <div
-        className="collapsible-button br-10"
+        className="dropdown-button br-5"
         onClick={() => setShowDetail(!showDetail)}
       >
-        <div className="title-collapsible">{props.title}</div>
+        <div className="title-dropdown">{props.title}</div>
         <i
           className={showDetail ? "fas fa-chevron-up" : "fas fa-chevron-down"}
           style={{}}
         ></i>
       </div>
       <div
-        className="content br-10"
+        className="content"
         style={{
           display: showDetail ? "block" : "none",
         }}
