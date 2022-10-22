@@ -4,7 +4,7 @@ import "./navbar.scss"
 
 export default function Navbar (){
     const location = useLocation();
-        console.log(location.pathname === `${route.about}`)
+
     return (<div className="nav-container">
         <ul className="nav d-flex justify-content-between">
             <li className="nav-item">

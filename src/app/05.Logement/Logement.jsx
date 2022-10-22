@@ -9,9 +9,12 @@ import Host from "../../component/Host/Host";
 export default function Logement () {
     const [searchParams] = useSearchParams()
     const logement_id = searchParams.get('id')
+
     const [ data, setData ] = useState(logements.find(item => item.id === logement_id))
+
+
     return(
-        <div className="logement-container">
+        <div className="logement-container center-wrapper">
             <Carousel imgs={data.pictures}/>
             <div className="info-container">
                 <Host
@@ -24,7 +27,9 @@ export default function Logement () {
                 />
             </div>
 
-            <div style={{"display": "flex"}}>
+            <div
+                className="dropdown-container"
+            >
                 <Dropdown
                     title='Equipements'
                     description={data.equipments.join("\n")}

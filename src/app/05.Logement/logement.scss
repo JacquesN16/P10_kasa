@@ -21,17 +21,27 @@
                 margin: 0 10px;
                 width: 60px;
                 height: 100%;
-                
-                
+
+
             }
             #host-profile-pic{
-                display: block; 
-                width: 64px;   
+                display: block;
+                width: 64px;
                 height: 64px;
                 background-color: grey;
                 border-radius: 50%;
             }
         };
-       
+
+    }
+    .dropdown-container{
+        display: flex;
+        width: 94%;
+        margin: auto;
+        @media only screen and (max-width: 480px) {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
 }

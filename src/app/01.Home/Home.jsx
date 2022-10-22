@@ -1,4 +1,5 @@
 import "./home.scss"
+import "../../common.scss"
 import {useState,useEffect} from "react"
 import logements from "../../data/logements.json"
 import { route } from '../../utils/route';
@@ -15,9 +16,12 @@ export default function Home () {
     },[])
 
     return(<>
-        <div id="home">
+        <div
+            id="home"
+            className="center-wrapper"
+        >
             <header>
-                <div className="header-wrapper br-25">
+                <div className="header-wrapper br-25 ">
                     <p id="header-text">Chez vous, partout et ailleurs</p>
                 </div>
             </header>
@@ -25,7 +29,7 @@ export default function Home () {
                 <section className="card-list">
                 {data && data.map((item,idx) =>{
                     return (
-                    <Link key={idx} to={`/announce/${item.id}`}>
+                    <Link key={idx} to={`${route.logement}?id=${item.id}`}>
                         <Card key={idx} id={idx} title={item.title} cover={item.cover} />
                     </Link>
                     )})}

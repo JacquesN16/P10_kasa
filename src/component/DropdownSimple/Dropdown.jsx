@@ -12,7 +12,7 @@ export default function Dropdown (props) {
       >
         <div className="title-dropdown">{props.title}</div>
         <i
-          className={showDetail ? "fas fa-chevron-up" : "fas fa-chevron-down"}
+          className={showDetail ?"fas fa-chevron-down":"fas fa-chevron-up"}
           style={{}}
         ></i>
       </div>

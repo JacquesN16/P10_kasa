@@ -1,7 +1,7 @@
 @import "../../common.scss";
 
 .active-img{
-    display: block;  
+    display: block;
 }
 
 .hidden-img{
@@ -18,7 +18,9 @@
         img{
             width: 100%;
         }
-       
+    }
+    @media only screen and (max-width: 480px) {
+        height: 335px;
     }
 }
 
