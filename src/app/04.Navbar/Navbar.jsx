@@ -6,15 +6,14 @@ export default function Navbar (){
     const location = useLocation();
 
     return (<div className="nav-container">
-        <ul className="nav d-flex justify-content-between">
-            <li className="nav-item">
-                <Link className="nav-link" aria-current="page" href={route.home}>
+        <div className="nav d-flex justify-content-between">
+            <div className="nav-item">
+                <Link className="nav-link" aria-current="page" to={route.home}>
                     <img alt='logo' src='./img/LOGO.png' id="logo-navbar"/>
                 </Link>
-            </li>
+            </div>
 
-           {/*TODO fix w3c error UL>LI unique*/}
-            <div className="k-nav-item-grp d-flex flex-row ">
+            <ul className="k-nav-item-grp d-flex flex-row ">
                 <li className="nav-item h-100 d-flex align-items-center">
                     <a
                         style={{
@@ -30,7 +29,7 @@ export default function Navbar (){
                             }}
                             href={route.about}>A Propos</a>
                 </li>
-            </div>
-        </ul>
+            </ul>
+        </div>
     </div>)
 }
