@@ -5,7 +5,7 @@ export default function Dropdown (props) {
   const [showDetail, setShowDetail] = useState(false);
 
   return (
-    <div className="dropdown br-5">
+    <div className={`dropdown br-5 ${props.dropdownClass ? props.dropdownClass : ''}`}>
       <div
         className="dropdown-button br-5"
         onClick={() => setShowDetail(!showDetail)}

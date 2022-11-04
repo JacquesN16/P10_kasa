@@ -56,6 +56,7 @@ export default function Logement () {
                 <Dropdown
                     title='Equipements'
                     description={data.equipments.join("\n")}
+                    dropdownClass='mr-60'
                 />
 
                 <Dropdown

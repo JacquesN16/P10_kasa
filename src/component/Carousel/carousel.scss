@@ -19,8 +19,19 @@
             width: 100%;
         }
     }
+    #carousel-index{
+        color:red;
+        position:absolute;
+        top:0
+    }
+
     @media only screen and (max-width: 480px) {
-        height: 335px;
+        height: 235px;
+        .img-container{
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 

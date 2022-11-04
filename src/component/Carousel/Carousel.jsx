@@ -57,6 +57,8 @@ export default function Carousel (props) {
                     className={renderDisplay(idx)}
                     />
                 )})}
+                <span id='carousel-index'> {currentID + 1} / {props.imgs? props.imgs.length.toString() : '0'}</span>
+
             </div>
             <i
                 id="next-icon"
