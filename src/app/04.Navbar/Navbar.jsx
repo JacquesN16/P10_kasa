@@ -12,6 +12,8 @@ export default function Navbar (){
                     <img alt='logo' src='./img/LOGO.png' id="logo-navbar"/>
                 </Link>
             </li>
+
+           {/*TODO fix w3c error UL>LI unique*/}
             <div className="k-nav-item-grp d-flex flex-row ">
                 <li className="nav-item h-100 d-flex align-items-center">
                     <a

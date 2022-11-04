@@ -46,7 +46,7 @@ export default function Carousel (props) {
                 className="fas fa-chevron-left navigate-icon"
                 onClick={handlePrev}
                 id="prev-icon"
-                ></i>
+                > </i>
             <div className="img-container">
 
                 {props.imgs && props.imgs.map((item,idx) =>{return(
@@ -61,7 +61,7 @@ export default function Carousel (props) {
             <i
                 id="next-icon"
                 className="fas fa-chevron-right navigate-icon"
-                onClick={handleNext}></i>
+                onClick={handleNext}> </i>
 
         </div>
     </>)

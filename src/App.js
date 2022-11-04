@@ -18,12 +18,11 @@ function App() {
         <Route path={route.about} element={<APropos />} />
         <Route path={route.logement} element={<Logement/>}/>
         <Route path={route.home} element={<Home/>} />
-        
         <Route path="*" element={<ErrorPage />} />
       </Routes>
 
       <Footer/>
-      
+
     </div>
   );
 }
